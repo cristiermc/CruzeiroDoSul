@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
         <div class="logo">ONG Esperança Viva</div>
 
         <!-- Botão Hambúrguer para mobile-->
-         <button class="menu-toggle" aria-label="Abrir menu de nevagação">
+         <button class="menu-toggle" aria-label="Abrir menu de navegação">
             <span></span>
             <span></span>
             <span></span>
@@ -20,7 +20,7 @@
 
         <nav aria-label="Navegação Principal">
             <ul>
-                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="index.html" >Início</a></li>
                 <li class="dropdown">
                     <a href="projetos.html">Projetos Sociais</a>
                     <ul class="dropdown-menu">
@@ -29,7 +29,7 @@
                     </ul>
                 </li>
             
-                <li><a href="cadastro.html">Seja Voluntário</a></li>
+                <li><a href="cadastro.html" class="active">Seja Voluntário</a></li>
             </ul>
         </nav>
      </header>
@@ -38,6 +38,16 @@
         <section>
             <h1>Cadastro de Apoiadores e Voluntários</h1>
             <p>Preencha os campos abaixo para fazer parte da nossa rede de apoio social.</p>
+
+            <!--Caixa de Alerta-->
+            <div class="alert alert-sucesso">
+                <strong>Atenção:</strong> As inscrições para o programa de voluntariado de 2026 estão abertas!
+            </div>
+
+            <div class="badges">
+                <span class="badge badge-primary">Inscrições Abertas</span>
+                <span class="badge badge-accent">Vagas Limitadas</span>
+            </div>
             
             <form action="#" method="POST">
                 <fieldset>
@@ -131,7 +141,7 @@
                     </div>
 
                     <div class="form-row">
-                        <div class="fomr-group">
+                        <div class="form-group">
                             <label for="cidade">Cidade *</label>
                             <input type="text" id="cidade" name="cidade" required placeholder="Tubarão">
                         </div>
@@ -182,6 +192,10 @@
             </form>
         </section>
     </main>
+
+    <div class="toast">
+        <span> Formulário Carregado e pronto para envio.</span>
+    </div>
 
     <footer>
         <p>&copy; 2026 ONG Esperança Viva. Todos os direitos reservados.</p>
