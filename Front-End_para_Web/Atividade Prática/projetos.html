@@ -7,15 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+     <header>
         <div class="logo">ONG Esperança Viva</div>
+
+        <!-- Botão Hambúrguer para mobile-->
+         <button class="menu-toggle" aria-label="Abrir menu de nevagação">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+
         <nav aria-label="Navegação Principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html" class="active">Projetos Sociais</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li class="dropdown">
+                    <a href="projetos.html">Projetos Sociais</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projetos.html#educacao">Educação</a></li>
+                        <li><a href="projetos.html#assistencia">Assistência</a></li>
+                    </ul>
+                </li>
+            
                 <li><a href="cadastro.html">Seja Voluntário</a></li>
             </ul>
-    </header>
+        </nav>
+     </header>
     <main>
         <section id="hero" aria-labelledby="titulo-projetos">
             <h1 id="titulo-projetos">Nossas Iniciativas Sociais</h1>

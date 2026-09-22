@@ -8,16 +8,31 @@
 </head>
 <body>
 
-    <header>
+     <header>
         <div class="logo">ONG Esperança Viva</div>
+
+        <!-- Botão Hambúrguer para mobile-->
+         <button class="menu-toggle" aria-label="Abrir menu de nevagação">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+
         <nav aria-label="Navegação Principal">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos Sociais</a></li>
-                <li><a href="cadastro.html" class="active">Seja Voluntário</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li class="dropdown">
+                    <a href="projetos.html">Projetos Sociais</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projetos.html#educacao">Educação</a></li>
+                        <li><a href="projetos.html#assistencia">Assistência</a></li>
+                    </ul>
+                </li>
+            
+                <li><a href="cadastro.html">Seja Voluntário</a></li>
             </ul>
         </nav>
-    </header>
+     </header>
 
     <main>
         <section>
@@ -124,7 +139,8 @@
                         <div class="form-group">
                             <label for="estado">Estado *</label>
                             <select id="estado" name="estado" required>
-                                <option value="SC" selected>Santa Catarina (SC)</option>
+                                <option value="">Selecione um estado...</option>
+                                <option value="SC">Santa Catarina (SC)</option>
                                 <option value="PR">Paraná (PR)</option>
                                 <option value="RS">Rio Grande do Sul (RS)</option>
                                 <option value="SP">São Paulo (SP)</option>
@@ -148,7 +164,7 @@
 
                     <div class="form-group">
                         <label for="disponibilidade">Disponibilidade de Horário</label>
-                        <select id="diponibilidade" name="disponibilidade">
+                        <select id="disponibilidade" name="disponibilidade">
                             <option value="semana-comercial">Dias úteis (Horário comercial)</option>
                             <option value="semana-noite">Dias úteis (Período noturno)</option>
                             <option value="finais-semana">Finais de Semana</option>
