@@ -450,6 +450,12 @@ footer {
     border-left: 4px solid var(--accent);
 }
 
+.css-validator {
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
 /* Modal de Informação */
 /* .modal-backdrop {
     position: fixed;
