@@ -9,6 +9,9 @@
 ![WCAG](https://img.shields.io/badge/WCAG-2.1%20AA-success.svg)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B%20Modules-yellow.svg)
 
+🚀 **Demonstração em Produção (Deploy):**  
+👉 [https://cristiermc.github.io/CruzeiroDoSul/](https://cristiermc.github.io/CruzeiroDoSul/)
+
 ---
 
 ## 📖 Sobre o Projeto
